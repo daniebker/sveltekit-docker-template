@@ -3,13 +3,13 @@ services:
   web:
     container_name: sveltekit
     environment:
-      - ORIGIN=http://localhost:3000
+      - ORIGIN=http://localhost:3117
     build:
       context: .
       dockerfile: ./Dockerfile
     restart: unless-stopped
     ports:
-      - 3000:3000
+      - 3117:3000
     networks:
       - app_network
 
